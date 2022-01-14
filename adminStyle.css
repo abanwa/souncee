@@ -1,0 +1,77 @@
+
+body{
+	box-sizing: border-box;
+	font-family: sans-serif,serif,cursive,monospace,ui-serif;
+	padding: 0px;
+	margin: 0px;
+	background-color: gray;
+}
+
+#divform{
+	width: 100%;
+	background-color: snow;
+
+}
+
+#form{
+	width: 80%;
+	height: 650px;
+	margin: 0 auto;
+	/*margin: 10px auto;*/
+	background-color: navajowhite;
+	padding-top: 10%;
+	
+	/*margin-top: 5%;
+	margin-bottom: 5%;*/
+}
+
+
+label{
+	font-family: ui-serif;
+	margin-left: 20%;
+}
+#form label, input, textarea, select, button {
+	margin-left: 20%;
+}
+#form input {
+	width: 50%;
+	height: 50px;
+	border-radius: 5px;
+}
+#form textarea {
+	width: 50%;
+	height: 100px;
+	border-radius: 5px;
+}
+#form select {
+	width: 50%;
+	height: 50px;
+	border-radius: 5px;
+}
+#form button {
+	width: 50%;
+	border: none;
+	padding: 15px;
+	border-radius: 4px;
+	background-color: skyblue;
+	//margin-left: 35%;
+
+}
+.register {
+	color: green;
+}
+
+
+
+/*                login form         */
+
+
+
+
+
+
+
+
+
+
+

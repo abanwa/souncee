@@ -1,0 +1,546 @@
+
+
+
+
+/*               LESS THAN      @ 1024px                    */
+
+
+@media screen and (min-width: 752px) and (max-width: 1219.99px){
+
+
+/*     Header  */
+
+#head{
+	height: 150px;
+	width: 100%;
+}
+
+#top{
+	height: 150px;
+	width: 100%;
+}
+
+#top img{
+	height: 100px;
+	width: 18%;
+	position: absolute;
+	left: 40%;
+	top: 11%;
+	padding-top: 12px;
+	margin-top: 1%;
+} 
+
+/*     End of head*/
+/*                           Menu         */
+#container{
+	display: none;
+}
+
+/*     space     */
+#space{
+	display: none;
+}
+/*       End of space         */
+
+
+/*       beginning of image box*/
+
+#image-box{
+	height: 155px; /* it was 165px before */
+	width: 100%;
+}
+.txt {
+	width: 100%;
+	height: 20px;
+	margin-top: -0.5%;
+} 
+.img1 {
+	width: 100%;
+	height: 130px;
+}
+.box1{
+	height: 160px;
+	width: 16%;
+}
+.img2{
+	width: 100%;
+	height: 130px;
+}
+.box2{
+	height: 160px;
+	width: 16%;
+}
+.img3{
+	width: 100%;
+	height: 130px;
+}
+.box3{
+	height: 160px;
+	width: 16%;
+}
+.img4{
+	width: 100%;
+	height: 130px;
+}
+.box4{
+	height: 160px;
+	width: 16%;
+}
+.img5{
+	width: 100%;
+	height: 130px;
+}
+.box5{
+	height: 160px;
+	width: 16%;
+}
+.img6{
+	width: 100%;
+	height: 130px;
+}
+.box6{
+	height: 160px;
+	width: 16%;
+}
+.img7{
+	width: 100%;
+	height: 130px;
+}
+.box7{
+	height: 160px;
+	width: 16%;
+}
+.img8{
+	width: 100%;
+	height: 130px;
+}
+.box8{
+	height: 160px;
+	width: 16%;
+}
+.img9{
+	width: 100%;
+	height: 130px;
+}
+.box9{
+	height: 160px;
+	width: 16%;
+}
+.img10{
+	width: 100%;
+	height: 130px;
+}
+.box10{
+	height: 160px;
+	width: 16%;
+}
+.img11{
+	width: 100%;
+	height: 130px;
+}
+.box11{
+	height: 160px;
+	width: 16%;
+}
+.img12{
+	width: 100%;
+	height: 130px;
+}
+.box12{
+	height: 160px;
+	width: 16%;
+}
+.img13{
+	width: 100%;
+	height: 130px;
+}
+.box13{
+	height: 160px;
+	width: 16%;
+}
+.img14{
+	width: 100%;
+	height: 130px;
+}
+.box14{
+	height: 160px;
+	width: 16%;
+}
+.img15{
+	width: 100%;
+	height: 130px;
+}
+.box15{
+	height: 160px;
+	width: 16%;
+}
+
+
+/* End of image-box*/
+
+
+
+/*   Beginnig of Container*/
+
+/*    Beginning of Outer   */
+
+.section{
+	width: 100%;
+}
+.outer{
+	height: 400px;
+}
+.inner1{
+	height: 400px;
+}
+.inner1 img{
+	height: 400px;
+}
+.inner1 p{
+	font-size: 35px;
+}
+/*  inner 2    */
+.inner2{
+	height: 400px;
+}
+.inner2 img{
+	height: 400px;
+}
+.inner2 p{
+	font-size: 35px;
+}
+
+/*            End of Outer  */
+
+/*       Beginning of display  */
+
+#display{
+	height: 45px;
+}
+.display1{
+	height: 30px;
+	margin-right: 50px;
+}
+.display1 h3{
+	color: #e8f51e;
+	top: -15px;
+	left: 60px;
+}
+.display1 a:hover{
+	background-color: #cceddb94;
+	color: snow;
+	transition: 0.5s ease;
+}
+.display1 h3:hover{
+	color: snow;
+	transition: 0.5s ease;
+}
+
+/*   End of display*/
+
+
+/*    Beginning of music-banner*/
+
+#music-banner{
+	height: 70px;
+}
+.inner-banner li{
+	margin-top: 1px; /* it was 14px before */
+}
+.inner-banner li a{
+	font-size: 20px;
+	color: #e8f51e;
+}
+.inner-banner li a hr{
+	color: snow;
+}
+.inner-banner li a:hover{
+	color: snow;
+	transition: 0.5s ease;
+}
+
+/*      End of music-banner        */
+
+
+/*         Board   */
+
+#board{
+	width: 95%;
+
+}
+/*    board 1   */
+
+.board1{
+	height: 120px;
+}
+.inner-board1{
+	height: 120px;
+}
+.inner-board1 img{
+	height: 100px;
+}
+.inner-board1 h5{
+	top: -6px;
+	left: 10px;
+	font-size: 10px;
+}
+.inner-board2 h3{
+	font-family: ui-serif,fangsong,serif;
+}
+  
+  /*   board 3  */
+
+
+.board3{
+	height: 120px;
+}
+.inner-board3{
+	height: 120px;
+}
+.inner-board3 img{
+	height: 100px;
+}
+.inner-board3 h5{
+	top: -6px;
+	left: 10px;
+	font-size: 10px;
+}
+.inner-board33 h3{
+	font-family: ui-serif,fangsong,serif;
+}
+ 
+ /*    board 5   */
+
+.board5{
+	height: 120px;
+}
+.inner-board5{
+	height: 120px;
+}
+.inner-board5 img{
+	height: 100px;
+}
+.inner-board5 h5{
+	top: -6px;
+	left: 10px;
+	font-size: 10px;
+}
+.inner-board55 h3{
+	font-family: ui-serif,fangsong,serif;
+} 
+
+/*    board 7   */
+.board7{
+	height: 120px;
+}
+.inner-board7{
+	height: 120px;
+}
+.inner-board7 img{
+	height: 100px;
+}
+.inner-board7 h5{
+	top: -6px;
+	left: 10px;
+	font-size: 10px;
+}
+.inner-board77 h3{
+	font-family: ui-serif,fangsong,serif;
+}
+
+			/*        End of  #board     */
+/*---------------------------------------------------------------*/
+
+
+/*           Beginning of Aside                               */
+
+
+
+#aside{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 1%;
+}
+.top-aside{
+	width: 90%;
+	display: inline-block;
+	float: left;
+}
+.top-aside h2{
+	width: 30%;
+	margin-left: 40%;
+	margin-right: 35%;
+	font-size: 20px;
+	position: relative;
+	margin-top: 0.5%;
+}
+
+.t{
+	/*background-color: green;
+	margin-top: 0%;
+	position: absolute;
+	top: 1600px;
+	left: 80px;*/
+	display: none;
+}
+.i{
+	/*background-color: green;
+	position: absolute;
+	top: 1600px;
+	left: 450px;*/
+	display: none;
+}
+.f{
+	/*background-color: green;
+	position: absolute;
+	top: 1600px;
+	left: 480px;*/
+	display: none;
+}
+.w{
+	/*background-color: green;
+	position: absolute;
+	top: 1600px;
+	left: 510px;*/
+	display: none;
+}
+.hr-sm{
+	margin-top: 5%;
+	margin-left: 10%;
+}
+
+/*       End of  Aside-top*/
+
+/*            Beginning of Aside1*/
+
+#aside1{
+	width: 40%;
+	background-color: white;
+	margin-top: 2%;
+	margin-left: 15%;
+	padding-bottom: 15px;
+	margin-right: 1%;
+}
+.aside1-p{
+	text-shadow: 0px;
+	font-weight: 0px;
+}
+.aside1-h3{
+	font-size: 20px;
+	color: #63c5da;
+	font-weight: 0px;
+	border: 5px solid #61b3454f;
+	position: absolute;
+	bottom: 15px;
+	left: 60px; /* it was 10px before */
+}
+.aside1-h3:hover{
+	background-color: #63c5da;
+	color: snow;
+}
+
+.hr-smm{
+	display: none;
+}
+		/*   end of aside 1   */
+
+/*   ----------------------------rch------------------------------------*/
+
+
+
+/*            Beginning of Search        */
+
+#search{
+	display: none;
+}
+			/*       End of Search           */
+/*------------------------------------------------------------*/
+
+/*           Beginning of Aside 2         */
+
+
+#aside2{
+	width: 40%;
+	margin-top: 2%;
+}
+.aside2-p{
+	display: none;
+}
+.aside2-h3{
+	display: none;
+}
+
+		/*       End of Aside 2     */
+
+/*   ------------------------------------------------------------------------*/
+
+/*    Beginning of footer      */
+
+#footer{
+	height: 50px;
+}
+#footer ul{
+	margin-left: 23%;
+	padding-top: 0px;
+}
+#footer ul a{
+	font-size: 0px;
+	font: 1.2em fantasy;
+}
+
+/*        End of footer 21     */
+
+/*       Beginning of footer 2*/
+
+#footer2{
+	display: none;
+}
+
+/*       End of footer 2*/
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1219.98px){
+	.txt{
+		margin-top: 3%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

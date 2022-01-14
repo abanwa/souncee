@@ -1,0 +1,213 @@
+<?php 
+
+		// connecting to database
+
+$conn = new mysqli('localhost','root','','souncebaze');
+
+// if ($conn) {
+// 	echo "connected";
+// }
+
+
+
+function registration(){
+	global $conn;
+if (isset($_REQUEST['button'])){
+
+	$firstName = $_REQUEST['firstName'];
+	$lastName = $_REQUEST['lastName'];
+	$email = $_REQUEST['email'];
+	$username = $_REQUEST['username'];
+	$password = $_REQUEST['password'];
+
+	$sql = "INSERT INTO registration (`firstname`,`lastname`,`email`,`username`,`password`) VALUES ('$firstName','$lastName','$email','$username','$password')";
+
+	$result = $conn->query($sql);
+
+	if ($result) {
+		# code...
+		echo "<h3 class ='register'>Registration SUccessful</h3>";
+	} else{
+		die("query failed" . mysqli_error($conn)); //to output error in case there is any
+		//echo "cannot insert";
+	}
+
+
+	}
+};
+
+
+//    LOGIN FUNCTION 
+
+function login() {
+	global $conn;
+
+if(isset($_POST['button'])){
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+
+	$sql = "SELECT * FROM registration WHERE email ='$email' AND password ='$password' LIMIT 1";
+	$result = $conn->query($sql);
+
+	if ($result){
+
+		foreach ($result as $value) {
+			$userid_db = $value['id'];
+			$username_db = $value['username'];
+
+			$_SESSION['userid'] = $userid_db;
+			$_SESSION['username'] = $username_db;
+			echo "login Successful";
+
+			header("location: ../home.php"); // we use "../" because home.php is outer the folder login.php is
+
+			}
+		}else{
+			die("query failed" . mysqli_error($conn));
+		}
+	}
+
+}
+function add_project_content() {
+ 	global $conn;
+
+ 	if (isset($_REQUEST['add'])) {
+ 		
+ 		$titledescription = $_REQUEST['titledescription'];
+		$author = $_REQUEST['author'];
+		$postdescription = $_REQUEST['postdescription'];
+		$post_category = $_REQUEST['category'];
+		
+		$uploaddate = date("Y-m-d H:i:s");
+
+	
+		$errors= array();  
+
+		$file_name = $_FILES['image']['name'];
+		$file_size =$_FILES['image']['size'];
+		$file_tmp =$_FILES['image']['tmp_name'];
+		$file_type=$_FILES['image']['type'];
+		$ex = explode('.', $file_name);
+		$file_ext = strtolower(end($ex));
+
+
+		//print_r($ex);
+		      
+		$expensions= array("jpeg","jpg","png");
+		      
+		if(in_array($file_ext,$expensions)=== false){
+		    $errors[]="extension not allowed, please choose a JPEG or PNG file.";
+		}
+		      
+		if($file_size > 2097152) {
+		    $errors[]='File size must be excatly 2 MB';
+		 }
+		$uniqid = uniqid();
+		$conurl_server = "../img/".$uniqid.".".$file_ext;
+		$conurl = $uniqid.".".$file_ext;
+
+		//file upload for music
+		
+		// echo $file_name;
+		if (!empty($file_name)) {
+			if(empty($errors)==true){
+				move_uploaded_file($file_tmp,$conurl_server);
+
+				$sql = "INSERT INTO content (`titledescription`, `author`, `postdescription`,`category`,`image_url`, `upload_date`) VALUES ('$titledescription','$author','$postdescription','$post_category','$conurl','$uploaddate')";
+
+				$result = $conn->query($sql);
+
+				if ($result) {
+					echo "inserted";
+				}else {
+				die("Query failed" . mysqli_error($conn));
+				print_r($conn->error);
+				}
+			}else{
+		    echo $conn->error;
+			}
+		}else {
+			die("Query failed" . mysqli_error($conn));
+		}
+	}
+}
+
+
+
+function get_artist(){
+global $conn;
+
+ $sql = "SELECT * FROM content ORDER BY id asc LIMIT 4"; //  asc means the it will output from the new post
+
+$result = $conn->query($sql);
+$num = 1;
+
+foreach($result as $value){
+	$id = $value['id'];
+	$author = $value['author'];
+	$image_url = $value['image_url'];
+	$titledescription = $value['titledescription'];
+	$postdescription = $value['postdescription'];
+
+
+	echo '<a href="song_details.php?id='.$id.'"> 
+							<div class="board1">
+									<div class="inner-board1">
+										<img src="img/'.$image_url.'">
+										<h5>'.$num.'</h5>
+									</div>
+									<div class="inner-board2">
+										<h3>'.$titledescription.'</h3>
+									</div>
+							</div>
+						</a>';	
+						$num++;
+
+}
+
+};
+
+
+function getSinglePost(){
+	global $conn;
+
+	if (isset($_GET['id'])) {
+
+		$id = $_GET['id'];
+
+	$sql = "SELECT * FROM content WHERE `id` = $id";
+
+	$result = $conn->query($sql);
+
+	foreach($result as $value){
+		$postid = $value['id'];
+		$author = $value['author'];
+		$image_url = $value['image_url'];
+		$titledescription = $value['titledescription'];
+		$postdescription = $value['postdescription'];
+
+		echo $author;
+
+
+	}
+
+		
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ ?>

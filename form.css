@@ -1,0 +1,227 @@
+body{
+	font-family: serif,sans-serif;
+	background-color: #0e1c1c;
+}
+form{
+	background-color: #ffff0026;
+	color: white;
+	padding: 10px 10px 20px 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+h1{
+	font-family:  monospace,fantasy,serif,sans-serif;
+	text-align: center;
+	font-size: 40px;
+	color: #e7b00c;
+	margin-bottom: 1%;
+	margin-top: 3%;
+}
+form input{
+	height: 25px;
+	border-width: thick;
+}
+label{
+	font-size: 22px;
+}
+#admin_username{
+	margin-left: 4.5%;
+}
+#admin_code{
+	margin-left: 2.5%;
+}
+#email{
+	margin-left: 12%;
+}
+#dob{
+	margin-left: 7.2%;
+}
+#nationality{
+	margin-left: 8.5%;
+}
+#country{
+	margin-left: 3%;
+	height: 30px;
+	width: 15%;
+	font-size: 19px;
+}
+#male{
+	margin-left: 11%;
+}
+#phone{
+	margin-left: 6.5%;
+}
+#favcolor{
+	width: 10%;
+	height: 28px;
+}
+#about{
+	margin-left: 16%;
+	margin-top: -3%;
+}
+form #register{
+	margin-left: 16%;
+	width: 8%;
+	height: 30px;
+	font-size: 18px;
+	font-weight: 50px;
+	background-color: blue;
+	color: white;
+	padding-bottom: 23px;
+}
+form #reset{
+	width: 8%;
+	height: 30px;
+	font-size: 18px;
+	font-weight: 50px;
+	background-color: red;
+	color: white;
+	margin-left: 2%;
+	padding-bottom: 23px;
+}
+
+
+/*           MEDIA QUERY  1280   */
+
+@media only screen and (max-width: 1280px){
+	form{
+		padding: 10px 20px 20px 20px;
+	}
+	form input{
+		width: 25%;
+	}
+	#admin_username{
+	margin-left: 6.5%;
+	}
+	#email{
+		margin-left: 16.5%;
+	}
+	#dob{
+		margin-left: 10.5%;
+	}
+	#nationality{
+		margin-left: 12%;
+	}
+	#male{
+		margin-left: 4%;
+	}
+	#ml{
+		margin-left: -10%;
+	}
+	#female{
+		margin-left: -8%;
+	}
+	#fl{
+		margin-left: -10%;
+	}
+	#phone{
+		margin-left: 9.5%;
+	}
+	#favcolor{
+		width: 15%;
+		height: 30px;
+	}
+	#about{
+		margin-left: 22.5%;
+		margin-top: -4%;
+	}
+	form #register{
+		margin-left: 22.5%;
+		padding-bottom: 23px;
+	}
+	form #reset{
+		padding-bottom: 23px;
+	}
+
+
+}
+
+
+/*           MEDIA QUERY  1280   */
+
+@media only screen and (max-width: 1024px){
+	h1{
+		font-size: 30px;
+	}
+	form input{
+		width: 60%;
+		margin-left: 5%;
+	}
+	#admin_lname{
+		margin-left: 5.5%;
+	}
+	#admin_username{
+	margin-left: 13.5%;
+	}
+	#admin_code{
+	margin-left: 9%;
+	}
+	#email{
+	margin-left: 27%;
+	}
+	#dob{
+	margin-left: 18.5%;
+	}
+	#nationality{
+	margin-left: 21%;
+	}
+	#country{
+	margin-left: 10%;
+	width: 20%;
+	}
+	#male{
+		width: 10%;
+		margin-left: 24%;
+	}
+	#ml{
+		margin-left: 0%;
+	}
+	#female{
+		margin-left: -23%;
+	}
+	#fl{
+		margin-left: -24%;
+	}
+	#phone{
+	margin-left: 17%;
+	}
+	#favcolor{
+		margin-right: 5%;
+		position: relative;
+		top: 10px;
+		left: 89px;
+	}
+	#about{
+		margin-left: 34%;
+		margin-top: -5%;
+	}
+	form #register{
+		margin-left: 34%;
+		width: 13%;
+	}
+	form #reset{
+		margin-left: 2%;
+		width: 13%;
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
